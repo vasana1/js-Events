@@ -6,26 +6,48 @@ The function will add the following content inside the paragraph with the id of 
 
 var bacon = "Shoulder turducken brisket, kevin swine andouille tri-tip salami tail ham sausage pork loin. Ribeye short loin rump kielbasa pork. Capicola short loin turducken corned beef tongue, chuck leberkas salami frankfurter. Kielbasa fatback pancetta, ground round meatball turducken jowl ribeye alcatra sirloin bacon corned beef beef ribs short loin. Pork belly spare ribs biltong corned beef meatball short ribs tongue alcatra swine drumstick. Biltong shankle kevin, cupim sirloin bresaola brisket. Tail pork belly biltong ball tip tri-tip, pig jerky cow pastrami prosciutto ;ground round bacon capicola tongue meatball.";
 
+function moreContent(){
+  var comment=document.getElementById("more");
+  comment.innerHTML=bacon
+}
 
 //2. HTTP
 /*Create a function named `lessContent` that will initiate the `Show Less` link after clicking on it.
 
-The function will hide the contents in the pargraph with the id of `less` after clicking on the `Show Less` link.*/
+The function will hide the contents in the paragraph with the id of `less` after clicking on the `Show Less` link.*/
+
+function lessContent(){
+  var content=document.getElementById("less");
+  content.style.display="none";
+}
 
 
 //3. Tacocat, The Original Palindrome King
 /*Create a function named `zoom` that will increase the font size of the paragraph with the id of `biggie` after hovering your mouse over it. Increae the font size to 150%*/
 
+function zoom(){
+  var biggerFont=document.getElementById("biggie");
+  biggerFont.style.fontSize = "150%";
+}
 
 //4. McDonalds
 /*Create a variable name menuItems and assign it an array of three of your favorite items at McDonald's.
 
-Next, create a function named valueMenu that will display your favorite items in the paragraph the the id of `menu` after clicking on the showMenu paragraph.*/
+Next, create a function named valueMenu that will display your favorite items in the paragraph with the id of `menu` after clicking on the showMenu paragraph.*/
 
+var menuItems = ["french fries", "apple pie", "chocolate shake"];
+
+function valueMenu(){
+  var menuFav=document.getElementById("menu");
+  menuFav.innerHTML=menuItems;
+}
 
 //5. Gin.
 /*Create a function named redFace that will change the paragraph text to red and a font size of 20px after clicking on the text.*/
 
+function redFace(){
+
+}
 
 //6. Peanut Butter Cup Oreos
 /*Create a function `showPrice` that will add the price of `$5.55` inside the paragraph with the id `price` after hovering your mouse over the paragraph.*/
